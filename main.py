@@ -105,7 +105,7 @@ is_message = IntVar()
 is_announcement = IntVar()
 
 # window icon
-logo = PhotoImage(file='icon.png')
+logo = PhotoImage(file='program_images/icon.png')
 window.call('wm', 'iconphoto', window._w, logo)
 
 # creating beatifull background :)
@@ -119,7 +119,7 @@ canvas.create_oval(90, 200, 290, 400, fill="#4989f7", outline="")
 canvas.create_oval(20, 400, 170, 550, fill="#4989f7", outline="")
 
 # my github link
-generate_btn_img = PhotoImage(file="github.png", height=50, width=50)
+generate_btn_img = PhotoImage(file="program_images/github.png", height=50, width=50)
 generate_btn = Button(image=generate_btn_img, borderwidth=0, highlightthickness=0,
                       command=lambda: webbrowser.open_new("https://github.com/Fecton"), relief="flat")
 generate_btn.place(x=20, y=10, width=50, height=50)
